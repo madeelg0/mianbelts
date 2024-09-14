@@ -1,0 +1,149 @@
+.customer-feedback-container {
+  padding: 50px;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.customer-feedback-container h2 {
+  margin-bottom: 30px;
+  font-size: 2em;
+}
+
+.feedback-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Drop shadow */
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  max-width: 500px; /* Smaller card size */
+  margin-bottom: 25px;
+   /* Center the card */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Slightly enlarge the center card */
+.slick-center .feedback-card {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.feedback-card-image {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.feedback-card-image img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.feedback-card h3, 
+.feedback-card p {
+  margin: 5px 0;
+  font-size: 1em; /* Standard font size */
+}
+
+.feedback-rating {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.star-icon {
+  color: #f39c12;
+  margin-right: 5px;
+}
+
+/* Slick dots */
+.slick-dots li button:before {
+  color: #007bff;
+}
+
+/* Slick arrows */
+.slick-prev:before,
+.slick-next:before {
+  color: #007bff;
+}
+
+/* Adjust the background cards to make them slightly visible */
+.slick-slide {
+  opacity: 0.6;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.slick-center {
+  opacity: 1;
+}
+
+/* RESPONSIVE DESIGN */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .feedback-card {
+    max-width: 200px;
+    padding: 10px;
+  }
+
+  .feedback-card-image img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .feedback-card h3,
+  .feedback-card p {
+    font-size: 0.9em; /* Slightly smaller text */
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .feedback-card {
+    max-width: 180px;
+    padding: 10px;
+  }
+
+  .feedback-card-image img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .feedback-card h3,
+  .feedback-card p {
+    font-size: 0.8em; /* Smaller text on mobile */
+  }
+
+  .customer-feedback-container h2 {
+    font-size: 1.5em; /* Smaller title for mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .feedback-card {
+    max-width: 150px;
+    padding: 8px;
+  }
+
+  .feedback-card-image img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .feedback-card h3,
+  .feedback-card p {
+    font-size: 0.75em;
+  }
+
+  .customer-feedback-container h2 {
+    font-size: 1.2em; /* Even smaller title */
+  }
+}

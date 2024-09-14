@@ -1,0 +1,58 @@
+/* CustomOrder.css */
+.Custom-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  width: 100%; /* Full width of the viewport */
+  background-image: url('../../Images/custombelt.png');  /* Path to your background image */
+  background-size: cover; /* Cover the entire container */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent repeating the background image */
+  position: relative; /* Make the overlay position relative to this container */
+  text-align: center;
+  color: white; /* Optional: Adjust text color for contrast */
+}
+
+.overlay {
+  position: absolute; /* Position the overlay absolutely within the container */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Black background with 50% opacity */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay h1{
+  color: white;
+  font-size: xx-large;
+}
+.overlay p{
+  color: rgba(233, 233, 233, 0.833);
+  font-size: x-large;
+}
+
+.custom-order-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007bff; /* Primary button color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+}
+
+.custom-order-button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+.custom-order-button:active {
+  background-color: #004494; /* Even darker shade on click */
+}
